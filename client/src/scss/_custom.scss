@@ -1,0 +1,198 @@
+.bg-yellow {
+  background-color: #198754 !important; // Use !important to ensure the style takes precedence
+}
+
+.bg-green {
+  background-color: #49EEA3 !important; 
+}
+.btn-interact {
+  background: linear-gradient(45deg,#198754, #198752); /* Gradient background */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  border: none;
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Add some border-radius for a rounded look */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background 0.3s ease;
+}
+
+.btn-interact:hover {
+  background: linear-gradient(45deg, #198754, #198754); /* Gradient background on hover */
+}
+
+/* Add this CSS to reduce padding for small devices */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 10px; /* Adjust the padding as needed */
+  }
+}
+
+.btn-register{
+  background: linear-gradient(45deg,#000000, #000000); /* Gradient background */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  font-size: 16px; /* Font size */
+  border: none;
+  border-radius: 5px; /* Add some border-radius for a rounded look */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background 0.3s ease;
+}
+.btn-register:hover {
+  background: linear-gradient(45deg, #000000, #198751); /* Gradient background on hover */
+  color: #000000;
+}
+
+a {
+  color: #198754; /* Link color */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+  color: #808080; /* Darker color on hover */
+}
+
+/* Hide the default checkbox */
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Style the custom checkbox */
+.checkbox-custom {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  vertical-align: middle; /* Align checkbox with text */
+}
+
+/* Style the checkmark inside the custom checkbox */
+.checkbox-custom::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border-radius: 1px;
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, show the checkmark */
+.checkbox-input:checked + .checkbox-custom::after {
+  background-color: #007bff;
+}
+
+/* Style the text next to the checkbox */
+.checkbox-label {
+  margin-left: 5px; /* Adjust spacing between checkbox and text */
+  vertical-align: middle; /* Align text with checkbox */
+}
+.text-yellow {
+  color: #198754; /* Yellow color */
+  transition: transform 0.3s; /* Adding transition for smooth effect */
+
+}
+
+// LandingPage.scss
+
+.landing-page {
+  background-image: url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height for full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: #ffffff; /* White text color */
+    font-weight: bold;
+  }
+
+  p {
+    color: #ffffff; /* White text color */
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    background-color: #FF6347; /* Custom primary button color */
+    border-color: #FF6347;
+
+    &:hover {
+      background-color: #CD5C5C; /* Custom hover color */
+      border-color: #CD5C5C;
+    }
+  }
+}
+.hover-effect:hover {
+  /* Add your hover effect styles here */
+  /* For example, changing background color and scaling */
+ 
+  transform: scale(1.1); /* Scale up by 10% */
+}
+/* Add this CSS to your style.scss or another CSS file */
+
+/* Navbar brand */
+.navbar-brand {
+  max-width: 30px; /* Adjust the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #333; /* Set the text color */
+  margin-right: 20px; /* Add margin between links */
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Change text color on hover */
+}
+
+/* Navbar icons */
+.navbar-nav .nav-link .icon {
+  font-size: 24px; /* Adjust the icon size as needed */
+  margin-right: 10px; /* Add margin between icon and text */
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+  color: #ffc107; /* Set active link color */
+}
+
+/* Container */
+.navbar-container {
+  padding: 0 20px; /* Add padding to the container */
+}
+
+/* Navbar background */
+.navbar {
+  background-color: #fff; /* Set background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Navbar toggle button */
+.navbar-toggler {
+  border-color: transparent; /* Remove border color */
+}
+
+.navbar-toggler-icon {
+  background-color: #333; /* Set toggle button color */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none; /* Remove focus outline */
+}
